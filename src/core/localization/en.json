@@ -1,0 +1,51 @@
+{
+  "common": {
+    "app_name": "PetEco",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "save": "Save",
+    "cancel": "Cancel",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "search": "Search",
+    "notifications": "Notifications",
+    "profile": "Profile"
+  },
+  "dashboard": {
+    "title": "Pet Dashboard",
+    "welcome": "Welcome back, {{name}}!",
+    "stats": {
+      "pets": "My Pets",
+      "appointments": "Upcoming Appointments",
+      "orders": "Recent Orders"
+    }
+  },
+  "ai": {
+    "assistant_title": "PetEco AI Assistant",
+    "input_placeholder": "Ask me anything about your pet...",
+    "welcome_msg": "Hello! How can I help you and your pet today?"
+  },
+  "features": {
+    "auth": "Authentication",
+    "dashboard": "Pet Dashboard",
+    "media": "Media Gallery",
+    "pet_shop": "Pet Shop",
+    "pet_owner": "My Profile",
+    "pharmacy": "Pet Pharmacy",
+    "vet_doctor": "Vet Doctor",
+    "trainer": "Pet Trainer",
+    "mating": "Pet Mating",
+    "pet_meat_shop": "Fresh Meat",
+    "community": "Community",
+    "daycare": "Pet Daycare",
+    "articles": "Pet Articles",
+    "announcement": "Announcements",
+    "emergency": "Emergency Help",
+    "adoption": "Pet Adoption",
+    "pet_spa": "Pet Spa",
+    "pet_cafe": "Pet Cafe",
+    "stay_with_pet": "Stay With Pet",
+    "ai_assistant": "AI Assistant"
+  }
+}

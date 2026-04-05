@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F5F5DC;
+    --foreground: #F8F9F8;
+    --primary: #2D5A27;
+    --secondary: #8B5E3C;
+    --text-main: #1A1A10;
+    --card: #F8F9F8;
+    --border: #D2B48C;
+  }
+
+  .dark {
+    --background: #1A1A10;
+    --foreground: #0F110F;
+    --primary: #A7D49B;
+    --secondary: #E0C1A3;
+    --text-main: #F8F9F8;
+    --card: #0F110F;
+    --border: #2D5A27;
+  }
+
+  * {
+    @apply border-slate-200 dark:border-slate-800 transition-colors duration-200;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50 antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 active:scale-95;
+  }
+
+  .glass-card {
+    @apply bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-white/20 dark:border-slate-700/30 shadow-xl;
+  }
+
+  .rtl-mirror {
+    @apply rtl:-scale-x-100;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-slate-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-600 rounded-full hover:bg-slate-400 dark:hover:bg-slate-500;
+}
