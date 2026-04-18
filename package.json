@@ -5,9 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:qa": "vite --mode qa",
+    "dev:prod": "vite --mode production",
     "build": "tsc -b && vite build",
+    "build:qa": "tsc -b && vite build --mode qa",
+    "build:prod": "tsc -b && vite build --mode production",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:qa": "vite preview --mode qa",
+    "preview:prod": "vite preview --mode production"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
